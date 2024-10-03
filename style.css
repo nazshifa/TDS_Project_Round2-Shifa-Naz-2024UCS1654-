@@ -1,0 +1,805 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.logoimg img {
+    height: 50px;
+    width: 60px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 70px;
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
+    /* margin-right: 300px; */
+}
+
+.logoimg {
+    margin-right: 250px
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.navbar {
+    margin-top: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar a:hover {
+    color:chocolate;
+    text-decoration: underline;
+}
+
+/* .intro{
+    height: 100vh;
+    width: 100%;
+    background-image: url("bgimg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+} */
+
+.intro {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white; /* Ensure text is visible */
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("bgimg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; /* Adjust the opacity level */
+    z-index: -1; /* Ensure the background image is behind the content */
+}
+
+
+
+.intro h1 {
+    font-family: "Updock", cursive;
+    font-weight: 600;
+    font-style: normal;      
+    color:#355834;
+    font-size: 150px;
+    line-height: 130px;    
+}
+
+.intro .shifa {
+    margin-left: 100px;
+    margin-top: 110px;
+    padding-right: 410px
+}
+
+ .intro h2 {
+    color:red;
+    font-size: 50px;
+    
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal; 
+} 
+
+#poem {
+    font-family: 'Times New Roman', Times, serif;
+    color:#14281D;
+    margin-top: 200px;
+    font-size: 30px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+}
+
+
+/* .menu_intro {
+    background-color:gray;
+    display:flex;
+}
+
+.menu_intro h1 {
+    text-align: center;
+    color:#14281D;
+    /* margin-top: 15px; */
+    /* padding-top: 25px;
+    padding-bottom: 30px;
+    text-decoration:double underline;
+}
+
+.food img{
+    width: 400px;
+    height: 450px;
+    border: 2px solid #122620;
+    border-radius: 15px;
+    box-shadow:2px 2px 2px 2px #4b443c;
+}
+
+.menu_intro  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  */
+
+.menu_section{
+    background-color:#b9b7bd;
+}
+
+.menu_section h2 {
+    /* font-family: sans-serif; */
+
+    font-family: "Updock", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+    color:black;
+    padding-left: 90px;
+    padding-bottom: 0px;
+    font-size: 60px;
+    /* font-family: "Old Standard TT", serif; */
+    /* font-weight: 700; */
+    /* font-style: italic; */
+}
+
+#menu {
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  brown;
+    text-decoration: double underline;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    
+}
+
+.starter {
+    display: flex;
+    /* gap: 2px; */
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    
+    
+}
+
+.starter img {
+    height: 300px;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.menu_section .starter .food {
+    border: 4px solid black;
+    margin: 30px;
+    border-radius: 15px;
+    transition: 0.8s ease-in-out ; 
+}
+
+.menu_section .starter .food:hover {
+    box-shadow: 5px 5px 5px 5px #14281D;
+}
+
+.aloo_tikka .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.aloo_tikka h3 {
+    text-align:center;
+    
+}
+
+.pyaaz .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color:brown;
+    /* font-family: "Nova Mono", monospace;
+    font-weight: 700;
+    font-style: normal; */
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.pyaaz h3 {
+    text-align:center;
+    
+}
+
+.sabudana .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color:brown;
+    /* font-family: "Nova Mono", monospace;
+    font-weight: 700;
+    font-style: normal; */
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.sabudana h3 {
+    text-align:center;
+    
+}
+
+.paneer_pakoda .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color:brown;
+    /* font-family: "Nova Mono", monospace;
+    font-weight: 700;
+    font-style: normal; */
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.paneer_pakoda h3 {
+    text-align:center;
+    
+}
+
+.potatofritter .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color:brown;
+    /* font-family: "Nova Mono", monospace;
+    font-weight: 700;
+    font-style: normal; */
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.potatofritter h3 {
+    text-align:center;
+    
+}
+
+.cocktail .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color:brown;
+    /* font-family: "Nova Mono", monospace;
+    font-weight: 700;
+    font-style: normal; */
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.cocktail h3 {
+    text-align:center;
+    
+}
+
+.peas .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color:brown;
+    /* font-family: "Nova Mono", monospace;
+    font-weight: 700;
+    font-style: normal; */
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.peas h3 {
+    text-align:center;
+    
+}
+
+.pav .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color:brown;
+    /* font-family: "Nova Mono", monospace;
+    font-weight: 700;
+    font-style: normal; */
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.pav h3 {
+    text-align:center;
+    
+}
+
+.main_course h2 {
+    font-family: "Updock", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+    color:black;
+    padding-left: 90px;
+    padding-bottom: 0px;
+    font-size: 60px;
+}
+
+/* main_course */
+
+.maincourse_menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.maincourse_menu img {
+    height: 300px;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.menu_section .maincourse_menu .food {
+    border: 4px solid black;
+    margin: 30px;
+    border-radius: 15px;
+    transition: 0.8s ease-in-out ; 
+}
+
+.menu_section .maincourse_menu .food:hover {
+    box-shadow: 5px 5px 5px 5px #14281D;
+}
+
+.pumpkin .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.pumpkin h3 {
+    text-align:center;
+    
+}
+
+.carrot .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.carrot h3 {
+    text-align:center;
+    
+}
+
+.carrot img {
+    width: 310px;
+}
+
+.parship .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.parship h3 {
+    text-align:center;
+    
+}
+
+.salad .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.salad h3 {
+    text-align:center;
+    
+}
+
+.shallot .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.shallot h3 {
+    text-align:center;
+    
+}
+
+.cauliflower .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.cauliflower h3 {
+    text-align:center;
+    
+}
+
+.spiced .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.spiced h3 {
+    text-align:center;
+    
+}
+
+.veggie .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.veggie h3 {
+    text-align:center;
+    
+}
+
+.veggie img {
+    width: 310px;
+}
+
+/* Dessert */
+
+.dessert_menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dessert_menu img {
+    height: 300px;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.menu_section .dessert_menu .food {
+    border: 4px solid black;
+    margin: 30px;
+    border-radius: 15px;
+    transition: 0.8s ease-in-out ; 
+}
+
+.menu_section .dessert_menu .food:hover {
+    box-shadow: 5px 5px 5px 5px #14281D;
+}
+
+.shifa .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.shifa h3 {
+    text-align:center;
+    
+}
+
+/* Beverages */
+
+.beverages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.beverages img {
+    height: 300px;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.menu_section .beverages .food {
+    border: 4px solid black;
+    margin: 30px;
+    border-radius: 15px;
+    transition: 0.8s ease-in-out ; 
+}
+
+.menu_section .beverages .food:hover {
+    box-shadow: 5px 5px 5px 5px #14281D;
+}
+
+.shifa .aloo {
+    font-size: 30px;
+    text-align: center; 
+    padding-right:30px;
+    
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal; 
+
+    color:brown;
+   
+}
+
+.shifa h3 {
+    text-align:center;
+    
+}
+
+.footer h1 {
+    text-align: center;
+    text-decoration: double underline;
+    padding-bottom: 70px;
+
+
+}
+
+.footer ul li {
+    color:brown;
+    font-size: 20px;
+    font-weight: 700;
+    /* padding-top: 70px; */
+    padding-left: 150px;
+    line-height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+.socail_media {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.footer h2 {
+    margin-top: 40px;
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: double underline;
+    margin-bottom: 40px;
+    
+}
+
+.ig img {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    display:block;
+}
+
+.ig a {
+    font-size: 25px;
+    font-weight: 400;
+    color:  #BF00FF;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.ig a:hover {
+    text-decoration: underline;
+}
+
+.fb img {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    display:block;
+}
+
+.fb a {
+    font-size: 25px;
+    font-weight: 400;
+    color:  blue;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.fb a:hover {
+    text-decoration: underline;
+}
+
+
+.din img {
+    height: 50px;
+    width: 90px;
+    border-radius: 10px;
+    display:block;
+}
+
+.din a {
+    font-size: 25px;
+    font-weight: 400;
+    color:  blue;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.din a:hover {
+    text-decoration: underline;
+}
+
+.twitter img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display:block;
+}
+
+.twitter a {
+    font-size: 25px;
+    font-weight: 400;
+    color:  black;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.twitter a:hover {
+    text-decoration: underline;
+}
+
+.naz {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form {
+    border: 5px double black;
+    /* border-style: inset; */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(190, 239, 223);
+}
+
+.form h3 {
+    text-align: center;
+    color: brown;
+    padding-bottom: 20px;
+    text-decoration: double underline;
+}
+
+.form button {
+    text-align: center;
+    background-color: #90b08f;
+    padding: 8px;
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
